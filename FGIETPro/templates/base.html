@@ -1,0 +1,74 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10">
+                <img src="{% static 'images/index.png' %}">
+            </div>
+            <div class="col-md-2">
+                <img src="{% static 'images/index.gif' %}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">About US
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">About FGIET</a></li>
+                                    <li><a href="#">Our Inspiration</a></li>
+                                    <li><a href="#">Vision and Mission</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-7">
+                <img src="{% static 'images/slide1.jpg' %}" style="height: 100% ;width: 100%;" id="img1">
+                <!--<script type="text/javascript">
+		            var arr=['{% static 'images/slide1.jpg' %}','{% static 'images/slide2.jpg' %}','{% static 'images/slide3.jpg' %}','{% static 'images/slide4.jpg' %}']
+		            var i=0;
+		            function fun(){
+			            var img = document.querySelector('#img1');
+			            img.setAttribute('src',arr[i])
+			            if (i<3){
+				            i++;
+			            }
+			            else{
+				            i=0;
+			            }
+		            }
+		            setInterval(fun,1000);
+	            </script>-->
+            </div>
+            <div class="col-md-4">
+                <h2>Welcome to Feroze Gandhi Institute of Engineering and Technology</h2>
+                <img src="{% static 'images/main.jpg' %}">
+                <p>Feroze Gandhi Institute of Engineering & Technology is a premier institute, established with a vision to develop world class technical professionals. FGIET having a spectacular campus of 22.5 acre with several conspicuous features. It Offers an amiable, verdant and eco-friendly atmosphere to the students and fosters them to be more meditative, veracious and focused.</p>
+                <p>The Institute was established by a dynamic organisation, inaugurated with the blessing of Smt...</p>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'javascript/first.js' %}"></script>
+</body>
+</html>
